@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jens.recipes">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="false"
+        android:theme="@style/Theme.Recipes">
+        <activity
+            android:name=".SpaghettiCarbonaraActivity"
+            android:parentActivityName=".MainsActivity" />
+        <activity
+            android:name=".FussiliWithSalmonActivity"
+            android:parentActivityName=".MainsActivity" />
+        <activity
+            android:name=".PizzaCalzoneActivity"
+            android:parentActivityName=".MainsActivity" />
+        <activity
+            android:name=".OrangeFennelChickenActivity"
+            android:parentActivityName=".MainsActivity" />
+        <activity
+            android:name=".DoradeActivity"
+            android:parentActivityName=".MainsActivity" />
+        <activity
+            android:name=".SauceHollandaiseActivity"
+            android:parentActivityName=".MainsActivity" />
+        <activity
+            android:name=".MorocconChickenActivity"
+            android:parentActivityName=".MainsActivity" />
+        <activity
+            android:name=".SaladsActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".DessertsActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".SoupsActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainsActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

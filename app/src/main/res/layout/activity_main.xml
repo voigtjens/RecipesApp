@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonSoups"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Suppen"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="40sp"
+        android:visibility="visible"
+        app:backgroundTint="@android:color/holo_red_dark"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSalads"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="13dp" />
+
+    <Button
+        android:id="@+id/buttonMains"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hauptgerichte"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonDesserts"
+        app:layout_constraintStart_toStartOf="@+id/buttonSalads"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSalads" />
+
+    <Button
+        android:id="@+id/buttonDesserts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Desserts"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="40sp"
+        app:backgroundTint="@android:color/holo_orange_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/buttonMains"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMains" />
+
+    <Button
+        android:id="@+id/buttonSalads"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salate"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="40sp"
+        app:backgroundTint="@android:color/holo_green_dark"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMains"
+        app:layout_constraintStart_toStartOf="@+id/buttonSoups"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSoups" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

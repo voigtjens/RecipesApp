@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/buttonSauceHollandaise"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            android:text="Sauce Hollandaise"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="40sp"
+            app:backgroundTint="@android:color/holo_orange_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:id="@+id/buttonMaroccanChicken"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            android:text="Marokkanisches Hühnchen"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="40sp"
+            app:backgroundTint="@android:color/holo_orange_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintTop_toBottomOf="@id/buttonSauceHollandaise" />
+
+        <Button
+            android:id="@+id/buttonDorade"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            android:text="Dorade"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="40sp"
+            app:backgroundTint="@android:color/holo_orange_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintTop_toBottomOf="@id/buttonMaroccanChicken" />
+
+        <Button
+            android:id="@+id/buttonOrangeFennelChicken"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            android:text="Orangenhühnchen mit Fenchel"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="40sp"
+            app:backgroundTint="@android:color/holo_orange_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintTop_toBottomOf="@id/buttonDorade" />
+
+        <Button
+            android:id="@+id/buttonPizzaCalzone"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            android:text="Pizza Calzone"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="40sp"
+            app:backgroundTint="@android:color/holo_orange_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintTop_toBottomOf="@id/buttonOrangeFennelChicken" />
+
+        <Button
+            android:id="@+id/buttonFussiliWithSalmon"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            android:text="Fussili mit Spargel, Bohnen und Lachs"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="40sp"
+            app:backgroundTint="@android:color/holo_orange_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintTop_toBottomOf="@id/buttonPizzaCalzone" />
+
+        <Button
+            android:id="@+id/buttonSpaghettiCarbonara"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            android:text="Spaghetti Carbonara"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="40sp"
+            app:backgroundTint="@android:color/holo_orange_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintTop_toBottomOf="@id/buttonFussiliWithSalmon" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
